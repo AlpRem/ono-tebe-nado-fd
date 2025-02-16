@@ -28,6 +28,8 @@ ol {
     background-color: #fff;
 }
 
+/* ==== Блок стилей для header ==== */
+
 .header{
     display: grid;
     align-items: center;
@@ -66,6 +68,82 @@ ol {
 .header__address a, p{
     font-size: 18px;
     line-height: 24.3px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
 
 }
+/* =============================== */
+/* ==== Блок стилей для cover ==== */
+.cover{
+
+    position: relative;
+    min-height: 757px;
+    background: url(../images/cover.jpg);
+    background-size: cover;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .4);
+    padding: 165px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cover__title{
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 130px;
+    letter-spacing: 32px;
+
+}
+
+.accent-span{
+    display: block;
+}
+
+.text-center{
+    text-align: center;
+    margin-right: -32px;
+}
+
+.text-right{
+    text-align: right;
+    margin-right: -32px;
+}
+
+
+.cover__subtitle{
+    display: flex;
+    color: #fff;
+    text-transform: uppercase;
+    height: 51px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cover__subtitle-text{
+
+    word-spacing: 19px;
+}
+
+.cover__subtitle-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 256px;
+    height: 100%;
+    border:  1px solid #fff;
+
+}
+
+.cover__subtitle-text, .cover__subtitle-button{
+    font-weight: 400;
+    font-size: 22px;
+}
+
+
+/* =============================== */
