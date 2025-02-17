@@ -157,6 +157,8 @@ ol {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 40px;
+    margin-left: 40px;
+    line-height: 46px
 
 }
 
@@ -171,7 +173,7 @@ ol {
     width: 334px;
     height: 596px;
 
-    
+
 }
 
 .card{
@@ -208,14 +210,18 @@ ol {
 
 }
 
+.card__title{
+    line-height: 1.1;
+}
+
 .card__title span{
     color: #fff;
     font-weight: 700;
     font-size: 22px;
-    line-height: 26px;
     text-decoration: underline;
     text-decoration-style: solid;
     text-transform: uppercase;
+    text-underline-offset: 2px;
 }
 
 .card__text{
@@ -230,5 +236,103 @@ ol {
     font-size: 20px;
     text-decoration: underline;
     text-underline-offset: 4px;
+}
+/* =============================== */
+
+/* ==== Блок стилей для about ==== */
+.about{
+    padding: 35px 24px 180px 24px;
+    display: grid;
+    grid-template-columns:  334px auto;
+    gap: 25px;
+}
+
+.about__logo{
+    margin-left: 47px;
+    background-color: black;
+    width: 240px;
+    height: 240px;
+    border-radius: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__logo-image{
+    width: 141px;
+    height: 112px;
+
+}
+
+.about__title{
+    height: 240px;
+    display: flex;
+    align-items: center;
+}
+
+.about__title span{
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.about__text{
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+}
+
+.about__text-bottom{
+    margin-top: 24px;
+}
+/* =============================== */
+
+/* ==== Блок стилей для footer ==== */
+.footer{
+    height: 180px;
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer__address{
+    justify-self: start;
+}
+
+.footer__menu{
+    justify-self: center;
+}
+
+.footer__menu-list{
+    list-style-type: none;
+}
+
+.footer__menu-link{
+    display: flex;
+    justify-content: center;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.13px;
+    text-align: center;
+    text-underline-offset: 4px;
+
+}
+
+.footer__social-list{
+    display: flex;
+    gap: 48px;
+    justify-content: end;
+}
+
+.footer__social-link{
+    list-style-type: none;
+}
+
+.footer__social-icon{
+    width: 48px;
+    height: 48px;
 }
 /* =============================== */
