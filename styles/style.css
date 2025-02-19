@@ -1,5 +1,5 @@
 /* место для вашего кода */
-body{
+body {
     font-family: Raleway, sans-serif;
     font-weight: 400;
     background-color: #ededed;
@@ -20,7 +20,7 @@ ol {
     font-style: normal;
 }
 
-.content-section{
+.content-section {
     box-sizing: border-box;
     width: 1100px;
     margin: auto;
@@ -28,7 +28,7 @@ ol {
 }
 
 /* ==== Блок стилей для header ==== */
-.header{
+.header {
     display: grid;
     align-items: center;
     padding: 93px 50px 95px 50px;
@@ -36,61 +36,61 @@ ol {
     height: 293px;
 }
 
-.header__menu-list{
+.header__menu-list {
     display: flex;
     gap: 32px;
     font-size: 18px;
     line-height: 21px;
 }
 
-.header__menu-items_active{
+.header__menu-items_active {
     list-style-type: none;
 }
 
-.header__menu-items{
+.header__menu-items {
     list-style-type: circle;
     text-underline-offset: 4px;
 }
 
-.header__logo-image{
+.header__logo-image {
     width: 148px;
     height: 105px;
 }
 
-.header__address{
+.header__address {
     max-width: 240px;
     justify-self: end;
     text-underline-offset: 4px;
 }
 
-.header__address a, p{
+.header__address a, p {
     font-size: 18px;
     line-height: 24px;
 }
 /* =============================== */
 
 /* ==== Блок стилей для cover ==== */
-.cover{
+.cover {
     position: relative;
     min-height: 757px;
     background-size: cover;
     background: url(../images/cover.jpg) bottom;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, .4);
 }
 
-.cover__content{
+.cover__content {
     padding: 165px 50px 50px 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.cover__title{
+.cover__title {
     width: 100%;
     color: #fff;
     font-weight: 700;
@@ -99,39 +99,39 @@ ol {
     letter-spacing: 32px;
 }
 
-.accent-span{
+.accent-span {
     display: block;
 }
 
-.text-center{
+.text-center {
     text-align: center;
     margin-right: -32px;
 }
 
-.text-right{
+.text-right {
     text-align: right;
     margin-right: -32px;
 }
 
-.cover__subtitle{
+.cover__subtitle {
     display: flex;
     height: 51px;
     align-items: center;
     justify-content: space-between;
 }
 
-.cover__subtitle-text{
+.cover__subtitle-text {
     word-spacing: 19px;
 }
 
-.cover__subtitle-button{
+.cover__subtitle-button {
     width: 256px;
     height: 100%;
     border:  1px solid #fff;
     background-color: transparent;
 }
 
-.cover__subtitle-text, .cover__subtitle-button{
+.cover__subtitle-text, .cover__subtitle-button {
     color: #fff;
     font-weight: 400;
     font-size: 22px;
@@ -140,15 +140,15 @@ ol {
 /* =============================== */
 
 /* ==== Блок стилей для lots ==== */
-.lots{
+.lots {
     padding: 180px 24px 120px 24px;
 }
 
-.lots__heading{
+.lots__heading {
     margin-bottom: 27px;
 }
 
-.lots__heading span{
+.lots__heading span {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 40px;
@@ -157,55 +157,53 @@ ol {
 
 }
 
-.lots__card-list{
+.lots__card-list {
     display: flex;
     gap: 25px;
     list-style-type: none;
     margin-bottom: 30px;
 }
 
-.lots__card-list-item{
+.lots__card-list-item {
     width: 334px;
     height: 596px;
-
-
 }
 
-.card{
+.card {
     background-position: center;
     background-size: cover;
     height: 100%;
     position: relative;
 }
 
-.card-link{
+.card-link {
     text-decoration: none;
 }
 
-.card__content{
+.card__content {
     padding: 48px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.card_type_film{
+.card_type_film {
     background-image: url(../images/card-lot-01.jpg);
 }
 
-.card_type_book{
+.card_type_book {
     background-image: url(../images/card-lot-02.jpg);
 }
 
-.card_type_picture{
+.card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
 }
 
-.card__title{
+.card__title {
     line-height: 1.1;
 }
 
-.card__title span{
+.card__title span {
     color: #fff;
     font-weight: 700;
     font-size: 22px;
@@ -215,14 +213,14 @@ ol {
     text-underline-offset: 2px;
 }
 
-.card__text{
+.card__text {
     color: #fff;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
 }
 
-.lots__look-more-link{
+.lots__look-more-link {
     margin-left: 40px;
     font-size: 20px;
     text-decoration: underline;
@@ -231,14 +229,14 @@ ol {
 /* =============================== */
 
 /* ==== Блок стилей для about ==== */
-.about{
+.about {
     padding: 35px 24px 180px 24px;
     display: grid;
     grid-template-columns:  334px auto;
     gap: 25px;
 }
 
-.about__logo{
+.about__logo {
     margin-left: 47px;
     background-color: black;
     width: 240px;
@@ -249,12 +247,12 @@ ol {
     align-items: center;
 }
 
-.about__logo-image{
+.about__logo-image {
     width: 141px;
     height: 112px;
 }
 
-.about__title{
+.about__title {
     height: 240px;
     display: flex;
     align-items: center;
@@ -262,46 +260,45 @@ ol {
 
 }
 
-.about__title{
+.about__title {
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
 }
 
-.about__text{
+.about__text {
     margin-top: 4px;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-
 }
 
-.about__text-bottom{
+.about__text-bottom {
     margin-top: 24px;
 }
 /* =============================== */
 
 /* ==== Блок стилей для footer ==== */
-.footer{
+.footer {
     height: 180px;
     padding: 0 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer__address{
+.footer__address {
     justify-self: start;
 }
 
-.footer__menu{
+.footer__menu {
     justify-self: center;
 }
 
-.footer__menu-list{
+.footer__menu-list {
     list-style-type: none;
 }
 
-.footer__menu-link{
+.footer__menu-link {
     display: flex;
     justify-content: center;
     font-weight: 400;
@@ -311,17 +308,17 @@ ol {
     text-underline-offset: 4px;
 }
 
-.footer__social-list{
+.footer__social-list {
     display: flex;
     gap: 48px;
     justify-content: end;
 }
 
-.footer__social-link{
+.footer__social-link {
     list-style-type: none;
 }
 
-.footer__social-icon{
+.footer__social-icon {
     width: 48px;
     height: 48px;
 }
