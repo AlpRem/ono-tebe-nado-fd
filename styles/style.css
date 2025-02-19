@@ -28,7 +28,6 @@ ol {
 }
 
 /* ==== Блок стилей для header ==== */
-
 .header{
     display: grid;
     align-items: center;
@@ -173,7 +172,6 @@ ol {
 }
 
 .card{
-
     background-position: center;
     background-size: cover;
     height: 100%;
@@ -193,17 +191,14 @@ ol {
 
 .card_type_film{
     background-image: url(../images/card-lot-01.jpg);
-
 }
 
 .card_type_book{
     background-image: url(../images/card-lot-02.jpg);
-
 }
 
 .card_type_picture{
     background-image: url(../images/card-lot-03.jpg);
-
 }
 
 .card__title{
@@ -309,13 +304,11 @@ ol {
 .footer__menu-link{
     display: flex;
     justify-content: center;
-
     font-weight: 400;
     font-size: 18px;
     line-height: 21.13px;
     text-align: center;
     text-underline-offset: 4px;
-
 }
 
 .footer__social-list{
