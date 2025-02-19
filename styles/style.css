@@ -257,13 +257,10 @@ ol {
     display: flex;
     align-items: center;
     margin-top: 5px;
-
-}
-
-.about__title {
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
+
 }
 
 .about__text {
