@@ -32,7 +32,7 @@ ol {
 .header{
     display: grid;
     align-items: center;
-    padding: 92px 50px 96px 50px;
+    padding: 93px 50px 95px 50px;
     grid-template-columns: 1fr min-content 1fr;
     height: 293px;
 }
@@ -41,7 +41,7 @@ ol {
     display: flex;
     gap: 32px;
     font-size: 18px;
-    line-height: 21.13px;
+    line-height: 21px;
 }
 
 .header__menu-items_active{
@@ -66,9 +66,7 @@ ol {
 
 .header__address a, p{
     font-size: 18px;
-    line-height: 24.3px;
-    letter-spacing: 0;
-
+    line-height: 24px;
 }
 /* =============================== */
 
@@ -76,8 +74,8 @@ ol {
 .cover{
     position: relative;
     min-height: 757px;
-    background: url(../images/cover.jpg);
     background-size: cover;
+    background: url(../images/cover.jpg) bottom;
 }
 
 .overlay{
@@ -98,9 +96,8 @@ ol {
     color: #fff;
     font-weight: 700;
     font-size: 100px;
-    line-height: 130px;
+    line-height: 1.3;
     letter-spacing: 32px;
-
 }
 
 .accent-span{
@@ -119,7 +116,6 @@ ol {
 
 .cover__subtitle{
     display: flex;
-
     height: 51px;
     align-items: center;
     justify-content: space-between;
@@ -261,23 +257,24 @@ ol {
 .about__logo-image{
     width: 141px;
     height: 112px;
-
 }
 
 .about__title{
     height: 240px;
     display: flex;
     align-items: center;
+    margin-top: 5px;
+
 }
 
-.about__title span{
+.about__title{
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
 }
 
 .about__text{
-    margin-top: 12px;
+    margin-top: 4px;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
