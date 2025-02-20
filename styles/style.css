@@ -1,10 +1,4 @@
 /* место для вашего кода */
-body {
-    font-family: Raleway, sans-serif;
-    font-weight: 400;
-    background-color: #ededed;
-}
-
 h1,
 h2,
 h3,
@@ -15,9 +9,11 @@ p,
 a,
 ul,
 ol {
-    margin:0;
-    padding:0;
     font-style: normal;
+}
+
+a{
+    text-underline-offset: 4px;
 }
 
 .content-section {
@@ -31,25 +27,29 @@ ol {
 .header {
     display: grid;
     align-items: center;
-    padding: 93px 50px 95px 50px;
+    padding: 93px 50px 91px 50px;
     grid-template-columns: 1fr min-content 1fr;
-    height: 293px;
 }
 
-.header__menu-list {
+.header__menu{
+    margin-top: -8px;
+}
+
+.menu-list {
     display: flex;
-    gap: 32px;
     font-size: 18px;
-    line-height: 21px;
 }
-
-.header__menu-items_active {
-    list-style-type: none;
+.header__menu-link{
+    gap: 32px;
 }
 
 .header__menu-items {
     list-style-type: circle;
-    text-underline-offset: 4px;
+
+}
+
+.menu-link_active, .footer__social-href{
+    text-decoration: none;
 }
 
 .header__logo-image {
@@ -58,12 +58,16 @@ ol {
 }
 
 .header__address {
+    margin-top: -8px;
     max-width: 240px;
-    justify-self: end;
-    text-underline-offset: 4px;
+
 }
 
-.header__address a, p {
+.address {
+    justify-self: end;
+}
+
+.address a, p {
     font-size: 18px;
     line-height: 24px;
 }
@@ -80,14 +84,15 @@ ol {
 .overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, .4);
+    background: rgba(0, 0, 0, .6);
 }
 
 .cover__content {
-    padding: 165px 50px 50px 50px;
+    padding: 157px 50px 50px 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
 }
 
 .cover__title {
@@ -95,8 +100,9 @@ ol {
     color: #fff;
     font-weight: 700;
     font-size: 100px;
-    line-height: 1.3;
-    letter-spacing: 32px;
+    line-height: 134px;
+    letter-spacing: 30px;
+    text-transform: uppercase;
 }
 
 .accent-span {
@@ -115,7 +121,6 @@ ol {
 
 .cover__subtitle {
     display: flex;
-    height: 51px;
     align-items: center;
     justify-content: space-between;
 }
@@ -126,7 +131,7 @@ ol {
 
 .cover__subtitle-button {
     width: 256px;
-    height: 100%;
+    height: 51px;
     border:  1px solid #fff;
     background-color: transparent;
 }
@@ -145,16 +150,12 @@ ol {
 }
 
 .lots__heading {
-    margin-bottom: 27px;
-}
-
-.lots__heading span {
+    margin-bottom: 28px;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 40px;
     margin-left: 40px;
     line-height: 46px
-
 }
 
 .lots__card-list {
@@ -162,11 +163,13 @@ ol {
     gap: 25px;
     list-style-type: none;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .lots__card-list-item {
-    width: 334px;
-    height: 596px;
+    max-width: 334px;
+    width: 100%;
+    min-height: 596px;
 }
 
 .card {
@@ -185,6 +188,8 @@ ol {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    height: 100%;
 }
 
 .card_type_film {
@@ -200,10 +205,6 @@ ol {
 }
 
 .card__title {
-    line-height: 1.1;
-}
-
-.card__title span {
     color: #fff;
     font-weight: 700;
     font-size: 22px;
@@ -217,14 +218,13 @@ ol {
     color: #fff;
     font-weight: 400;
     font-size: 20px;
-    line-height: 24px;
+    padding-top: 35px;
 }
 
 .lots__look-more-link {
     margin-left: 40px;
     font-size: 20px;
     text-decoration: underline;
-    text-underline-offset: 4px;
 }
 /* =============================== */
 
@@ -233,7 +233,7 @@ ol {
     padding: 35px 24px 180px 24px;
     display: grid;
     grid-template-columns:  334px auto;
-    gap: 25px;
+    gap: 4px 25px;
 }
 
 .about__logo {
@@ -248,36 +248,33 @@ ol {
 }
 
 .about__logo-image {
-    width: 141px;
-    height: 112px;
+    width: 145px;
+    height: 113px;
 }
 
 .about__title {
-    height: 240px;
     display: flex;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 9px;
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
+}
 
+.about__column-title{
+    align-self: center;
 }
 
 .about__text {
-    margin-top: 4px;
+    margin-top: 5px;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-}
-
-.about__text-bottom {
-    margin-top: 24px;
 }
 /* =============================== */
 
 /* ==== Блок стилей для footer ==== */
 .footer {
-    height: 180px;
     padding: 0 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -296,13 +293,12 @@ ol {
 }
 
 .footer__menu-link {
-    display: flex;
+    display: block;
     justify-content: center;
-    font-weight: 400;
     font-size: 18px;
-    line-height: 21.13px;
+    font-weight: 400;
+    line-height: 21px;
     text-align: center;
-    text-underline-offset: 4px;
 }
 
 .footer__social-list {
