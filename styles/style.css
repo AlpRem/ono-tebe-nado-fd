@@ -81,13 +81,14 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .overlay {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, .6);
-    z-index: 1;
+    z-index: -1;
 }
 
 .cover__title {
@@ -98,10 +99,6 @@ a {
     line-height: 134px;
     letter-spacing: 30px;
     text-transform: uppercase;
-}
-
-.offset-first {
-    z-index: 2;
 }
 
 .accent-span {
@@ -176,11 +173,11 @@ a {
     background-size: cover;
     height: 100%;
     position: relative;
-
     padding: 48px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .card-link {
