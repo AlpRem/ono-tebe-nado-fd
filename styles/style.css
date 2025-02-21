@@ -27,29 +27,29 @@ a {
 .header {
     display: grid;
     align-items: center;
-    padding: 93px 50px 91px 50px;
+    padding: 89px 50px 92px 50px;
     grid-template-columns: 1fr min-content 1fr;
-}
-
-.header__menu {
-    margin-top: -8px;
 }
 
 .menu-list {
     display: flex;
     font-size: 18px;
-}
-.header__menu-link {
     gap: 32px;
+}
+
+.list-style-type-none {
+    list-style-type: none;
 }
 
 .header__menu-items {
     list-style-type: circle;
-
 }
 
 .menu-link_active, .footer__social-href {
     text-decoration: none;
+}
+.header__logo {
+    padding-top: 3px;
 }
 
 .header__logo-image {
@@ -58,9 +58,7 @@ a {
 }
 
 .header__address {
-    margin-top: -8px;
     max-width: 240px;
-
 }
 
 .address {
@@ -79,20 +77,17 @@ a {
     min-height: 757px;
     background-size: cover;
     background: url(../images/cover.jpg) bottom;
+    padding: 157px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .overlay {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, .6);
-}
-
-.cover__content {
-    padding: 157px 50px 50px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+    z-index: 1;
 }
 
 .cover__title {
@@ -103,6 +98,10 @@ a {
     line-height: 134px;
     letter-spacing: 30px;
     text-transform: uppercase;
+}
+
+.offset-first {
+    z-index: 2;
 }
 
 .accent-span {
@@ -177,19 +176,15 @@ a {
     background-size: cover;
     height: 100%;
     position: relative;
-}
 
-.card-link {
-    text-decoration: none;
-}
-
-.card__content {
     padding: 48px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
-    height: 100%;
+}
+
+.card-link {
+    text-decoration: none;
 }
 
 .card_type_film {
@@ -230,10 +225,10 @@ a {
 
 /* ==== Блок стилей для about ==== */
 .about {
-    padding: 35px 24px 180px 24px;
+    padding: 35px 24px 180px 26px;
     display: grid;
     grid-template-columns:  334px auto;
-    gap: 4px 25px;
+    gap: 23px;
 }
 
 .about__logo {
@@ -255,10 +250,11 @@ a {
 .about__title {
     display: flex;
     align-items: center;
-    margin-top: 9px;
+    margin-top: 4px;
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
+    height: 240px;
 }
 
 .about__column-title {
@@ -275,7 +271,7 @@ a {
 
 /* ==== Блок стилей для footer ==== */
 .footer {
-    padding: 0 50px;
+    padding: 0 50px 82px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -286,10 +282,6 @@ a {
 
 .footer__menu {
     justify-self: center;
-}
-
-.footer__menu-list {
-    list-style-type: none;
 }
 
 .footer__menu-link {
